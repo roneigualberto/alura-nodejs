@@ -3,6 +3,7 @@ var http = require('http');
 var server = http.createServer(function(req, res){
 
 	console.log('url', req.url);
+	
 	if(req.url == "/produtos"){
 		res.end("<html><body><h1> Listando os produtos</h1></body></html>");
 	}
